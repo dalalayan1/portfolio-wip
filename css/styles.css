@@ -35,9 +35,13 @@
 *,body {
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: #000;
     letter-spacing: 3px;
     box-sizing: border-box;
+    /* font-family: 'Montserrat', sans-serif;
+    font-family: 'Chicle', cursive; 
+    font-family: 'Amatic SC', cursive; */
+    font-family: 'Indie Flower', cursive;
 }
 
 nav > ul {
@@ -79,6 +83,10 @@ nav > ul >li > a {
 
 .first {
     background-image: url('../img/bg-dp-flipflip.jpg');
+}
+
+.second {
+    background-image: url('../img/bd-edit1.png');
 }
 
 .first h2,
@@ -134,18 +142,19 @@ nav > ul >li > a {
 
 .second.active h2.section-heading {
     position: absolute;
-    font-size: 100px;
-    animation: appearAndDissapear 4s;
+    font-size: 300px;
+    /* animation: appearAndDissapear 4s; */
     left: 50%;
     top: 50vh;
-    opacity: 0;
-    transform: translate(-50%,-70%);
+    opacity: 0.2;
+    transform: translate(-50%,-50%);
     text-align: center;
+    color: #fff;
 }
 
 .second .project-section {
-    animation: appearSlowly 8s;
-    opacity: 1;
+    /* animation: appearSlowly 8s; */
+    /* opacity: 1; */
 }
 
 .project-section .project-list>li {
