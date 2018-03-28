@@ -1,8 +1,8 @@
 
 
 @keyframes appearAndDissapear {
-    0% {opacity: 0;}
-    25% {opacity: 0;}
+    0% {opacity: 1;}
+    25% {opacity: 1;}
     50% {opacity: 1;}
     100% {opacity: 0;}
 }
@@ -98,7 +98,7 @@ nav > ul >li > a {
 .first h1 {
     position: absolute;
     font-size: 100px;
-    animation: appearAndDissapear 4s;
+    animation: appearAndDissapear 6s;
     left: 50%;
     top: 50%;
     opacity: 0;
@@ -108,13 +108,13 @@ nav > ul >li > a {
 
 .first h2 {
     font-size: 40px;
-    animation: slideLeftToRight 4s;
+    animation: slideLeftToRight 8s;
     left: 60%;
 }
 
 .first p.intro {
     font-size: 20px;
-    animation: slideLeftToRight 6s;
+    animation: slideLeftToRight 10s;
     padding-top: 30px;
     left: 60%;
 }
