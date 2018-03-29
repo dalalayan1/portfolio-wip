@@ -31,6 +31,12 @@
     100% {left: 60%; opacity: 1;}
 }
 
+.position-center {
+    left: 50%;
+    top: 50vh;
+    transform: translate(-50%,-50%);
+}
+
 
 *,body {
     margin: 0;
@@ -42,6 +48,7 @@
     font-family: 'Chicle', cursive; 
     font-family: 'Amatic SC', cursive; */
     font-family: 'Indie Flower', cursive;
+    font-weight: bold;
 }
 
 nav > ul {
@@ -76,7 +83,7 @@ nav > ul >li > a {
 .section {
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 30px 60px;
+    padding: 0 60px;
     box-sizing: border-box;
     position: relative;
 }
@@ -119,42 +126,27 @@ nav > ul >li > a {
     left: 60%;
 }
 
-.img-wrapper {
-    position: absolute;
-    animation: slideTopToBottom 6s;
-    left: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 320px;
-    width: 320px;
-}
-
-.img-wrapper > img {
-    height: 100%;
-    width: 100%;
-    animation: createBorderCurve 6s;
-    border-radius: 50%;
-}
-
 .second {
     position: relative;
 }
 
 .second.active h2.section-heading {
     position: absolute;
-    font-size: 300px;
+    font-size: 250px;
     /* animation: appearAndDissapear 4s; */
-    left: 50%;
-    top: 50vh;
     opacity: 0.2;
-    transform: translate(-50%,-50%);
     text-align: center;
     color: #fff;
 }
 
 .second .project-section {
+    position: relative;
     /* animation: appearSlowly 8s; */
     /* opacity: 1; */
+}
+
+.project-section .project-list {
+    list-style-type: none;
 }
 
 .project-section .project-list>li {
@@ -166,8 +158,16 @@ nav > ul >li > a {
 }
 
 .project-section .project-list .project-desc {
-    padding: 20px 0 0 20px;
-    font-size: 25px;
+    padding: 10px 0 0 20px;
+    font-size: 20px;
+}
+
+.project-section .project-list .project-desc a {
+    color: #555;
+}
+
+.project-section .project-list .project-desc b {
+    text-decoration: underline;
 }
 
 .project-section .project-list .project-desc ul {
